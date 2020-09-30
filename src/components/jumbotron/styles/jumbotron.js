@@ -23,7 +23,11 @@ export const Item =styled.div`
 `;
 
 export const Container =styled.div`
-
+    @media (max-width:  1000px){
+        ${Item}:last-oftype h2{
+            margin-bottom: 50px;
+        }
+    }
 `
 export const Title =styled.h1`
     font-size: 50px;
